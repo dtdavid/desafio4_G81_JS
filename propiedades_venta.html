@@ -67,9 +67,12 @@
       integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
       crossorigin="anonymous"
     ></script>
-    <script type="module">
-      import propiedades_venta from "./assets/js/venta.js";
 
+    <!-- Aquí importamos de venta.js todas las propiedades y renderizamos directamente al cargar el DOM -->
+    <script type="module">
+      //importamos módulo con la Data
+      import propiedades_venta from "./assets/js/venta.js";
+      //creamos función para el renderizado automático
       function propiedadesV() {
         const ventaHTML = document
           .getElementById("venta")
